@@ -5,6 +5,16 @@ Introduction
 
 The Financial Industry Regulatory Ontology (FIRO) was developed by the Governance, Risk and Compliance Technology Centre to support the knowledge extraction and enhance the knowledge base for its research projects focused on knowledge management systems for regulatory compliance in the financial industry.
 
+FIRO is a series of interlinked Ontologies based on industry standards to capture regulatory imperatives and rules in formal semantics. 
+It will enable efficient access to, and smarter consumption of, the wide and complex spectrum of financial services industry regulations.
+
+It also expresses the abstract model followed by the other GRCTC projects:
+The parser (Hermes)
+The Methodology (RIM)
+The XML Schema (Mercury)
+The Tool (Ganesha)
+FiORO
+
 FIRO-H(ighLevel)
 
 FIRO-HighLevel (FIRO-H) is a core legal ontology about regulatory compliance. It is centred around the concept of Requirement (Rule Statement) and the concept of Action, and defined in OWL.
