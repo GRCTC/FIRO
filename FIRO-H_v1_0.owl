@@ -1,0 +1,2410 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H"
+     versionIRI="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H_V1_0">
+    <Prefix name="" IRI="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Financial Industry Regulatory Ontology (FIRO) was developed by the Governance, Risk and Compliance Technology Centre to support the knowledge extraction and enhance the knowledge base for its research projects focused on knowledge management systems for regulatory compliance in the financial industry.
+
+FIRO is a series of interlinked Ontologies based on industry standards to capture regulatory imperatives and rules in formal semantics. It will enable efficient access to, and smarter consumption of, the wide and complex spectrum of financial services industry regulations.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.grctc.com/wp-content/uploads/2016/11/firo-page-graphic.jpg</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Leona O&apos;Brien</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Firas Al Khalil</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2016-11-01</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Financial Industry Regulatory ontology - High Level</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright 2016 GRCTC
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Marcello Ceci</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tom Butler</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FIRO-HighLevel (FIRO-H) is a core legal ontology about regulatory compliance. It is centred around the concept of Requirement (Rule Statement) and the concept of Action, and defined in OWL.</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#prohibition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#refersTo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#objectOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compliesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasException"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeonticModality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tokenOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalContext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContraryToDuty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreachCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValueUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermissionCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegulatoryException"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplianceCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#obligation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#incompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAlethicModality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCommencementDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exceptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mercuryID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sourceOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FactorLegalDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConstitutiveType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Factor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalDefinition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#impossibility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#applicabilityConditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndirectObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#factorOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBusinessSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allowedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeonticCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#valueUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#definedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValueNumber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regulatesActivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEfficacyEnd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionLegalDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegulatoryStatement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contextOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerbLegalDefinition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#businessSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#legalSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#expression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#permission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#breaches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prohibits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#verbOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConstitutiveStatement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfActivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#possibility"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regulatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComparison"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVerb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasDefinition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasApplicabilityCondition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#legalContextOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#originalText"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exemptionOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExemptionCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEfficacyStart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalRule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responsibleOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commencement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalContext"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlethicModality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExemption"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modeOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comparisonOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#themeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasToken"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResponsible"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeonticModality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplicabilityCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includesAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#indirectObjectOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#necessity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#enactmentDate"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ConstitutiveType"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#definedBy"/>
+            <Class IRI="#LegalDefinition"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LegalDefinition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#defines"/>
+            <Class IRI="#ConstitutiveType"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RegulatoryException"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#allows"/>
+            <Class IRI="#BreachCondition"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RegulatoryStatement"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#allows"/>
+                    <Class IRI="#Action"/>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasDeonticModality"/>
+                    <NamedIndividual IRI="#permission"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#prohibits"/>
+                    <Class IRI="#Action"/>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasDeonticModality"/>
+                    <NamedIndividual IRI="#prohibition"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#requires"/>
+                    <Class IRI="#Action"/>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasDeonticModality"/>
+                    <NamedIndividual IRI="#obligation"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#hasResponsible"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasVerb"/>
+            <Class IRI="#Verb"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#incompatibleWith"/>
+            <Class IRI="#Action"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#partOfActivity"/>
+            <Class IRI="#Activity"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSubject"/>
+            <Class IRI="#Factor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mercuryID"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionLegalDefinition"/>
+        <Class IRI="#LegalDefinition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionLegalDefinition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#defines"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Action"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasToken"/>
+                    <Class IRI="#Action"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#hasResponsible"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlethicModality"/>
+        <Class IRI="#Modality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApplicabilityCondition"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreachCondition"/>
+        <Class IRI="#DeonticCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreachCondition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#breaches"/>
+            <Class IRI="#RegulatoryStatement"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRule"/>
+        <Class IRI="#Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBusinessSource"/>
+            <Class IRI="#BusinessSource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessSource"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commencement"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commencement"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasCommencementDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplianceCondition"/>
+        <Class IRI="#DeonticCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplianceCondition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#compliesTo"/>
+            <Class IRI="#RegulatoryStatement"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstitutiveStatement"/>
+        <Class IRI="#Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstitutiveStatement"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasContext"/>
+            <Class IRI="#Context"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstitutiveStatement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAlethicModality"/>
+            <Class IRI="#AlethicModality"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstitutiveType"/>
+        <ObjectUnionOf>
+            <Class IRI="#Action"/>
+            <Class IRI="#Factor"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Context"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContraryToDuty"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeonticCondition"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeonticModality"/>
+        <Class IRI="#Modality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExemptionCondition"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BreachCondition"/>
+            <Class IRI="#PermissionCondition"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExemptionCondition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#exemptionOf"/>
+            <Class IRI="#Condition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Factor"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mercuryID"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FactorLegalDefinition"/>
+        <Class IRI="#LegalDefinition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FactorLegalDefinition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#defines"/>
+            <Class IRI="#Factor"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalContext"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalContext"/>
+        <Class IRI="#LegalSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalDefinition"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalRule"/>
+        <Class IRI="#Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalRule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLegalSource"/>
+            <Class IRI="#LegalSource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalSource"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mode"/>
+        <Class IRI="#Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermissionCondition"/>
+        <Class IRI="#DeonticCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermissionCondition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#allowedBy"/>
+            <Class IRI="#RegulatoryStatement"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryException"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryException"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#exceptionOf"/>
+            <Class IRI="#RegulatoryStatement"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryStatement"/>
+        <Class IRI="#Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryStatement"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#Condition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryStatement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasDeonticModality"/>
+            <Class IRI="#DeonticModality"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requirement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSource"/>
+            <Class IRI="#Source"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requirement"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#hasTheme"/>
+            <Class IRI="#Theme"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requirement"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#mercuryID"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerbLegalDefinition"/>
+        <Class IRI="#LegalDefinition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerbLegalDefinition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#defines"/>
+            <Class IRI="#Action"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BusinessRule"/>
+        <Class IRI="#LegalRule"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConstitutiveStatement"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#Requirement"/>
+        <Class IRI="#BusinessRule"/>
+        <Class IRI="#LegalRule"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="#Requirement"/>
+        <Class IRI="#ConstitutiveStatement"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="#AlethicModality"/>
+        <NamedIndividual IRI="#impossibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AlethicModality"/>
+        <NamedIndividual IRI="#necessity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeonticModality"/>
+        <NamedIndividual IRI="#obligation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeonticModality"/>
+        <NamedIndividual IRI="#permission"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AlethicModality"/>
+        <NamedIndividual IRI="#possibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeonticModality"/>
+        <NamedIndividual IRI="#prohibition"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#allowedBy"/>
+        <ObjectProperty IRI="#conditionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#allows"/>
+        <ObjectProperty IRI="#hasCondition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#applicabilityConditionOf"/>
+        <ObjectProperty IRI="#conditionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#breaches"/>
+        <ObjectProperty IRI="#conditionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#businessSourceOf"/>
+        <ObjectProperty IRI="#sourceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#comparisonOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#compliesTo"/>
+        <ObjectProperty IRI="#conditionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasApplicabilityCondition"/>
+        <ObjectProperty IRI="#hasCondition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBusinessSource"/>
+        <ObjectProperty IRI="#hasSource"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComparison"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIndirectObject"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLegalContext"/>
+        <ObjectProperty IRI="#hasContext"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLegalSource"/>
+        <ObjectProperty IRI="#hasSource"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMode"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResponsible"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubject"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasValueUnit"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#indirectObjectOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#legalContextOf"/>
+        <ObjectProperty IRI="#contextOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#legalSourceOf"/>
+        <ObjectProperty IRI="#sourceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#locationOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#modeOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#objectOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#prohibits"/>
+        <ObjectProperty IRI="#hasCondition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requires"/>
+        <ObjectProperty IRI="#hasCondition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#responsibleOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#subjectOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#valueUnitOf"/>
+        <ObjectProperty IRI="#factorOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#allowedBy"/>
+        <ObjectProperty IRI="#allows"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#applicabilityConditionOf"/>
+        <ObjectProperty IRI="#hasApplicabilityCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#breaches"/>
+        <ObjectProperty IRI="#prohibits"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#businessSourceOf"/>
+        <ObjectProperty IRI="#hasBusinessSource"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#comparisonOf"/>
+        <ObjectProperty IRI="#hasComparison"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#compliesTo"/>
+        <ObjectProperty IRI="#requires"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#conditionOf"/>
+        <ObjectProperty IRI="#hasCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contextOf"/>
+        <ObjectProperty IRI="#hasContext"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#definedBy"/>
+        <ObjectProperty IRI="#defines"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#exceptionOf"/>
+        <ObjectProperty IRI="#hasException"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#exemptionOf"/>
+        <ObjectProperty IRI="#hasExemption"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#factorOf"/>
+        <ObjectProperty IRI="#hasFactor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIndirectObject"/>
+        <ObjectProperty IRI="#indirectObjectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLegalContext"/>
+        <ObjectProperty IRI="#legalContextOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLegalSource"/>
+        <ObjectProperty IRI="#legalSourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#locationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMode"/>
+        <ObjectProperty IRI="#modeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectProperty IRI="#objectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasResponsible"/>
+        <ObjectProperty IRI="#responsibleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSource"/>
+        <ObjectProperty IRI="#sourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubject"/>
+        <ObjectProperty IRI="#subjectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTheme"/>
+        <ObjectProperty IRI="#themeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasToken"/>
+        <ObjectProperty IRI="#tokenOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasValueUnit"/>
+        <ObjectProperty IRI="#valueUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVerb"/>
+        <ObjectProperty IRI="#verbOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#includesAction"/>
+        <ObjectProperty IRI="#partOfActivity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#regulatedBy"/>
+        <ObjectProperty IRI="#regulatesActivity"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDeonticModality"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#incompatibleWith"/>
+    </SymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#containedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasExemption"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#incompatibleWith"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allowedBy"/>
+        <Class IRI="#PermissionCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allows"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#applicabilityConditionOf"/>
+        <Class IRI="#ApplicabilityCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#breaches"/>
+        <Class IRI="#BreachCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#businessSourceOf"/>
+        <Class IRI="#BusinessSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comparisonOf"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compliesTo"/>
+        <Class IRI="#ComplianceCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#conditionOf"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#definedBy"/>
+        <Class IRI="#ConstitutiveType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exceptionOf"/>
+        <Class IRI="#RegulatoryException"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exemptionOf"/>
+        <Class IRI="#ExemptionCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#factorOf"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAlethicModality"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasApplicabilityCondition"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBusinessSource"/>
+        <Class IRI="#BusinessRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComparison"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeonticModality"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasException"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExemption"/>
+        <Class IRI="#BreachCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFactor"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndirectObject"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegalContext"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegalSource"/>
+        <Class IRI="#LegalRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMode"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObject"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResponsible"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTheme"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasToken"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Action"/>
+            <Class IRI="#ConstitutiveType"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasValueUnit"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVerb"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includesAction"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#incompatibleWith"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legalContextOf"/>
+        <Class IRI="#LegalContext"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legalSourceOf"/>
+        <Class IRI="#LegalSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locationOf"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modeOf"/>
+        <Class IRI="#Mode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfActivity"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prohibits"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#refersTo"/>
+        <Class IRI="#BusinessSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regulatedBy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regulatesActivity"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#responsibleOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sourceOf"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#themeOf"/>
+        <Class IRI="#Theme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tokenOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#valueUnitOf"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#verbOf"/>
+        <Class IRI="#Verb"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allowedBy"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allows"/>
+        <Class IRI="#PermissionCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#applicabilityConditionOf"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#breaches"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#businessSourceOf"/>
+        <Class IRI="#BusinessRule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comparisonOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compliesTo"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#conditionOf"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#definedBy"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#ConstitutiveType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exceptionOf"/>
+        <Class IRI="#RegulatoryStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exemptionOf"/>
+        <Class IRI="#BreachCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#factorOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAlethicModality"/>
+        <Class IRI="#AlethicModality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasApplicabilityCondition"/>
+        <Class IRI="#ApplicabilityCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBusinessSource"/>
+        <Class IRI="#BusinessSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComparison"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeonticModality"/>
+        <Class IRI="#DeonticModality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasException"/>
+        <Class IRI="#RegulatoryException"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExemption"/>
+        <Class IRI="#ExemptionCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFactor"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndirectObject"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalContext"/>
+        <Class IRI="#LegalContext"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalSource"/>
+        <Class IRI="#LegalSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMode"/>
+        <Class IRI="#Mode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObject"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResponsible"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class IRI="#Factor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTheme"/>
+        <Class IRI="#Theme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasToken"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasValueUnit"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVerb"/>
+        <Class IRI="#Verb"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includesAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#incompatibleWith"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#legalContextOf"/>
+        <Class IRI="#ConstitutiveStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#legalSourceOf"/>
+        <Class IRI="#LegalRule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locationOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modeOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prohibits"/>
+        <Class IRI="#BreachCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#refersTo"/>
+        <Class IRI="#LegalSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulatedBy"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulatesActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#ComplianceCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#responsibleOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sourceOf"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#themeOf"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tokenOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Action"/>
+            <Class IRI="#ConstitutiveType"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#valueUnitOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#verbOf"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasBusinessSource"/>
+        <ObjectProperty IRI="#hasLegalSource"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEfficacyEnd"/>
+        <DataProperty IRI="#hasCommencementDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEfficacyStart"/>
+        <DataProperty IRI="#hasCommencementDate"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#author"/>
+        <Class IRI="#Requirement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#enactmentDate"/>
+        <Class IRI="#Requirement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#expression"/>
+        <Class IRI="#Requirement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCommencementDate"/>
+        <Class IRI="#Commencement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEfficacyEnd"/>
+        <Class IRI="#Commencement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEfficacyStart"/>
+        <Class IRI="#Commencement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSource"/>
+        <Class IRI="#Requirement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTime"/>
+        <Class IRI="#Action"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValueNumber"/>
+        <Class IRI="#Action"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#originalText"/>
+        <Class IRI="#Requirement"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#enactmentDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#expression"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCommencementDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEfficacyEnd"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEfficacyStart"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValueNumber"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mercuryID"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#originalText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Actions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A category of events, or an abstraction of them, defined arbitrarily, as expressed by a verb, complete with the subject and (if present) its direct complements (e.g. object, indirect object, location). It is the result of the interpretation on the behavior required by the rule. Actions are expressed by SBVR verb concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: instances and subclasses of Action (except Conditions) correspond to verb concepts in SBVR. The link to the Mercury Vocabulary is ensured by the property hasVocEntry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionLegalDefinition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Legal Definition of an action (verb + complements)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An activity as concerned by a business rule. It involves several actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AlethicModality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: Every statement can be expressed as an obligation or as a prohibition or as a restricted permission. The modality class just indicates the original representation chosen by the editor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AlethicModality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the modality chosen by the editor for the original representation of the Mercury constitutive statement. Its members are Necessity, Impossibility, Possibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ApplicabilityCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A condition that determines if a given event is relevant to a given rule, or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BreachCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Offences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BreachCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Offence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BreachCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A condition that is deontically qualified by a proibition, or a condition that is incompatible with a compliance to an obligation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BreachCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: Every regulatory statement that is not a Permission will have at least one subclass of the Breach class linked to it by the “breaches” property. In case of a RegStatement with modality “prohibition”, this subclass constitute the main field of application of the requirement.
+In case of a RegStatement with modality “obligation”, this subclass constitute an indirect field of application of the requirement (for actions that are “incompatibleWith” a Comply class)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NonLegalRequirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NonLegalRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A statement that defines or constrains some aspect of the business. This must be either a term or fact, a constraint, or a derivation. It is &apos;atomic&apos; in that it cannot be broken down or decomposed further into more detailed business rules. If reduced any further, there would be loss of important information about the business. 
+A Business Rule is a requirement which has no legal value in any jurisdiction, i.e. its violation does not lead to any “external” penalty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Definition origin: Chapter 3 of the paper &quot;Defining Business Rules ~ What Are They Really?&quot;, produced by the Business Rules Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: internal policies are not “Legal Rules”, because the violation of those norms does not entail any liability by the company, but only some internal penalty for some employee.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The text that contains the business rule. It is represented in Mercury-ML and defined in FIRO-S.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Commencement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Commencements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Commencement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Commencement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Commencement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">These rules indicate a (directly or indirectly identified) time paramenter (a) as the starting point for the validity (b) of the regulation (or part of it) (c).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComplianceCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Compliances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComplianceCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Compliance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ComplianceCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Condition that is deontically qualified by an obligation, or a condition that is incompatible with a breach of an obligation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ComplianceCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: Every regulatory statement that is not a Permission will have at least one subclass of the Comply class linked to it by the “compliesTo” property. In case of a RegStatement with modality “obligation”, this subclass constitute the main field of application of the requirement. In case of a RegStatement with modality “prohibition”, this subclass constitute an indirect field of application of the requirement (for actions that are “incompatibleWith” a Breach class)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a condition is an action used in a rule. A condi-tion shares the same properties of its general action and may restrict fac-tors by specifying:
+1. its scope or value, or
+2. The role it plays in another condition (grammatical complement).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConstitutiveStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ConstitutiveStatements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConstitutiveStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ConstitutiveStatement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConstitutiveStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An abstract command modifying the legal status of reality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConstitutiveStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Austin, John Langshaw. How to do things with words. Oxford university press, 1975.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConstitutiveType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An action or a factor that is defined by a LegalDefinition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Context</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The &quot;area of relevance&quot; of a Constitutive Rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContraryToDuty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a regulatory statement which applies to those responsible for the actions that breach another (&quot;main&quot;) regulatory statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeonticCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A condition that determines if a relevant event complies/breaches a rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeonticModality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The modality chosen by the editor for the original representation of the Mercury regulative rule (SBVR operative rule).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ExemptionCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Exemptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ExemptionCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Exemption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExemptionCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An action that is the target of an exception (i.e., an action that is Allowed and also a subset of a Breach).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Factor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Factors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Factor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Factor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A (generic or specific) entity that plays a role in one or more actions contained in the same rule. It is a result of the interpretation of the entities involved in the rule. Factors are expressed by SBVR verb concept roles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Factor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: It corresponds to the verb concept role in SBVR. The link to the noun concept in the Mercury Vocabulary is ensured by the hasVocEntry property. General and unitary noun concepts are represented as subclasses, while individual noun concepts are represented as individuals. The “General concept” attribute in SBVR is translated into the rdfs:subClassOf predicate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FactorLegalDefinition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Legal Definition of a Factor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LegalContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LegalContexts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LegalContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LegalContext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegalContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The LegalSource that constitutes the “area of relevance” of a certain constitutive rule. E.g., terms that are classified under a certain ConstitutiveType will be labelled as such only if contain within the LegalContext of the Legal Definition related to that ConstitutiveType.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LegalDefinition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LegalDefinitions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LegalDefinition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LegalDefinition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegalDefinition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">These rules, often contained in the first article of regulations, specify the meaning of specific terms (b) that are found throughout the regulative text or in a subpart of it (c). When terms specifically appear in legal definitions, the interpretation of their meaning cannot be arbitrary: every time they occur in the text, they must be understood as meaning the exact combination of words (or sentences) that appear in the definition (a).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegalRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A requirement which has legal value in one or more jurisdictions. The important characteristic distinguishing them from non-legal requirements is the liability of the offender to a penalty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegalRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: Secondary legislation (e.g. technical specifications coming from official sources) should still be classified as Legal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegalRule</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">H. L. A. Hart, The Concept of Law, Oxford: Oxford University Press, 1961. pp. viii, 263. 21s.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LegalSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LegalSources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LegalSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LegalSource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegalSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The legal text that contains the legal requirement. It is represented in LegalDocML and defined in FIRO-S.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A physical or abstract location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Modality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Modalities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Modality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Modality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Modality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The modality chosen by the editor for the original representation of the regulatory statement in Mercury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A way or manner of performing an Action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PermissionCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Condition that is deontically qualified by a permission.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A (natural or legal) person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegulatoryException</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A regulatory statement that allows an action that is a subset of a Breach or a Comply.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RegulatoryStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RegulatoryStatements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RegulatoryStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RegulatoryStatement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegulatoryStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A regulatory norm, i.e. an abstract command imposing a behaviour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegulatoryStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Carlo Biagioli and Giovanni Sartor. “Regole e atti linguistici nel discorso normativo. Studi per un modello informatico-giuridico”. In: Nuovi modelli formali del diritto. Il ragionamento giuridico nell’informatica e nell’intelligenza artificiale. CLUESP, 1993</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A norm, i.e. an abstract command either imposing a behaviour or modifying the legal status of reality.
+The content of a normative text, either with or without legal value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: We extend the notion of legal rule to encompass also non-legal (business) rules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gordon, Thomas F., Guido Governatori, and Antonino Rotolo. &quot;Rules and norms: Requirements for rule interchange languages in the legal domain.&quot; International Workshop on Rules and Rule Markup Languages for the Semantic Web. Springer Berlin Heidelberg, 2009.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The medium that contains the requirement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasDefinition"/>
+        <IRI>#Theme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">[Marcello] discuss with Leona the details of Themes, if Requirements have Themes independently from Sources and the number of layers in the Themes. Then we can choose whether the Themes class exists in FIRO or only in Mercury.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: themes are using for classifying text fragment and retrieving the relevant legislation for a specific business process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the theme of a requirement, corresponding to the theme of the source’s unit(s) of analysis. See Mercury-CL.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A measuring unit, including a legal tender.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Verb</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Verbs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Verb</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Verb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Verb</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanatory note: It corresponds to the verb symbol in SBVR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Verb</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The predicate expressing the Action. It corresponds to the verb symbol in SBVR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VerbLegalDefinition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Legal Definition of a Verb Symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#allowedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the regulatory statement that allows the specific Allowed class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#allows</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Allowed class that is deontically qualified by the regulatory statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#applicabilityConditionOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the regulatory statement where this condition is an applicability condition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#author</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The author of the rule (the SME who first interpreted the legal text and came out with that representation in the rulebook)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#breaches</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the regulatory statement that specific Breach class breaches.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#businessSourceOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Business Rule contained in a Business Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#compliesTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the regulatory statement that specific Comply class complies with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#containedIn</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the document that the domain instance is a part of. This property should exist in FIRO-S instead of FIRO-H.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the document that is part of the domain instance. This property should exist in FIRO-S instead of FIRO-H.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#definedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Legal Definition for this constitutive type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#defines</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the constitutive type defined by a Legal Definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#enactmentDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the date on which the rule enters into force. Because this information is in the Source, this property should be superfluous. The reason for including it is mostly for covering the case of commencement rules that target a part of legal text that is smaller than the smallest structural element. If FIRO-S can identify units of analysis smaller than the smallest structural element, this property can be definitely removed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#exceptionOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the rule that requires or prohibits a superset of the condition targeted by the domain regulatory statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#exemptionOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the rule that imposes a different deontic qualification from “allows” for a superset of the domain condition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#expression</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contains the text of the rule as written by its author.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAlethicModality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the original modality of the constitutive statement (the one assigned by its author).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBusinessSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Business Source of a Business Rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCommencementDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies a date where there is an alteration in the efficacy of the law defined as Context, as defined by a Commencement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComparison</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the second term of comparison of an action. The first term of comparison is always the subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the context of a constitutive statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDeonticModality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the original modality of the regulatory statement (the one assigned by its author).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEfficacyEnd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the date when the effects of the Context cease, as defined by a Commencement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEfficacyStart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the commencement date for the law defined as Context, as defined by a Commencement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasException</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the rule that allows a subset of the condition targeted by the domain regulatory statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasExemption</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies a condition that is subject to an “allows” deontic qualification that is different from that of the domain regulatory statement, for a subset of the target of the domain regulatory statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFactor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies generically a verb concept role of a verb concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasIndirectObject</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the indirect object of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLegalContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the context of a legal constitutive statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLegalSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Legal Source of a LegalRule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLocation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the location of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the modality of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasObject</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the object of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasResponsible</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the agent responsible for an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Source of a Requirement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSubject</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the subject of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTheme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Theme of a Requirement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the time of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasToken</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the verb concept used by the legal definition to define the brand new verb concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasValueNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the value of an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasValueUnit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the unit in which the value of an action is expressed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVerb</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the verb symbol of a verb concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#includesAction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the actions that an activity involves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#incompatibleWith</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies an action that cannot be performed while performing this action. It includes - but is not limited to - the opposite of the action and the negation of the action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#legalSourceOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Legal Rule contained in a Legal Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mercuryID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the ID (complete URI) of the Mercury entry (rule or vocabulary). Its range corresponds to Mercury-ML’s nounConceptID for noun concepts, and to Mercury-ML’s verbConceptID for verb concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#obligation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">obligation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#originalText</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the original caption for the rule. It is superfluous if the source text is always provided with the rulebook. This should be in FIRO-S.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfActivity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the activity related to an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#permission</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">permission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#prohibition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">prohibition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prohibits</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Breach class that is deontically qualified by the regulatory statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refersTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the Legal Source that is referred in the Business Source. This property should exist in FIRO-S instead of FIRO-H.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulatedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Policy that regulates an activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulatesActivity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Activity regulated by a Policy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requires</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Comply class that is deontically qualified by the regulatory statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#responsibleOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the action that an agent is responsible for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sourceOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Requirement contained in the Source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#themeOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Requirement with a Theme</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
